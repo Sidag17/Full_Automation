@@ -1,0 +1,83 @@
+{
+  "flashTool": {
+    "commanderPath": "C:\\SiliconLabs\\SimplicityStudio\\v5\\developer\\adapter_packs\\commander\\commander.exe",
+    "timeoutSeconds": 120,
+    "flashRetryCount": 3,
+    "useDeviceArgument": true,
+    "probeCommand": [
+      "{commander}",
+      "adapter",
+      "probe",
+      "--ip",
+      "{ip}"
+    ],
+    "flashCommand": [
+      "{commander}",
+      "flash",
+      "{binary}",
+      "--ip",
+      "{ip}",
+      "--device",
+      "{chip_type}"
+    ],
+    "resetCommand": [
+      "{commander}",
+      "device",
+      "reset",
+      "--ip",
+      "{ip}",
+      "--device",
+      "{chip_type}"
+    ]
+  },
+  "toolchains": ["gcc", "gcc_lto", "llvm", "llvm_lto"],
+  "vcom": {
+    "mode": "ip",
+    "tcpPort": 4901,
+    "baudRate": 115200,
+    "captureTimeoutSeconds": 30,
+    "startupDelaySeconds": 0.25,
+    "serialReadTimeoutSeconds": 0.25
+  },
+  "paths": {
+    "workspaceRoot": "C:\\AutomationWorkspace",
+    "downloadsDir": "downloads",
+    "sdksDir": "sdks",
+    "binariesDir": "binaries",
+    "logsDir": "logs",
+    "reportsDir": "reports"
+  },
+  "discovery": {
+    "defaultRootFolder": "C:\\BuildArtifacts\\3075",
+    "binaryExtension": ".s37",
+    "boardNamePattern": "brd[0-9]+[a-z]+"
+  },
+  "buildAdapter": {
+    "enabled": true,
+    "slcPath": "C:\\Users\\siagrawa\\.silabs\\slt\\installs\\archive\\slc-cli-v6.0.23\\slc_cli\\slc.bat",
+    "cmakePath": "C:\\Users\\siagrawa\\.silabs\\slt\\installs\\conan\\p\\cmakefa35ab0687064\\p\\bin\\cmake.exe",
+    "ninjaPath": "C:\\Users\\siagrawa\\.silabs\\slt\\installs\\conan\\p\\ninja1a38fc85adcf7\\p",
+    "gccPath": "C:\\Users\\siagrawa\\.silabs\\slt\\installs\\conan\\p\\gcc-a999d2e027337f\\p",
+    "sdkRootTemplate": "C:\\{build}\\gecko-sdk",
+    "aimlRelative": "extension\\aiml-extension",
+    "wiseconnectRelative": "extension\\wiseconnect",
+    "examplesRelative": "extension\\aiml-extension\\examples",
+    "generateRootTemplate": "C:\\slc-test\\generated\\{build}\\{board}",
+    "concurrency": 2,
+    "generateTimeoutSeconds": 600,
+    "buildTimeoutSeconds": 1800,
+    "makePath": "",
+    "generateCommand": [],
+    "buildCommand": [],
+    "notes": "SLC generate + cmake --workflow --preset project. Artifacts land under discovery.defaultRootFolder/{build}/{board}/{toolchain}/{project}_{board}/"
+  },
+  "sdkPrepare": {
+    "enabled": true,
+    "defaultExtensions": ["aiml-extension", "wiseconnect"],
+    "geckoZipName": "gecko-sdk.zip",
+    "extensionsSubdir": "",
+    "sdkRootTemplate": "C:\\{build}\\gecko-sdk",
+    "downloadConcurrency": 4,
+    "notes": "User supplies build + artifactoryUrl. ZIP downloads run in parallel up to downloadConcurrency; extract stays sequential."
+  }
+}

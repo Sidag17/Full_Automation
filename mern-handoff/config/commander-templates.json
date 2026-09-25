@@ -1,0 +1,50 @@
+{
+  "placeholders": ["commander", "binary", "ip", "serialno", "chip_type"],
+  "stripEmptyFlagPairs": ["--ip", "--serialno", "--device"],
+  "probeCommand": [
+    "{commander}",
+    "adapter",
+    "probe",
+    "--ip",
+    "{ip}"
+  ],
+  "flashCommand": [
+    "{commander}",
+    "flash",
+    "{binary}",
+    "--ip",
+    "{ip}",
+    "--device",
+    "{chip_type}"
+  ],
+  "resetCommand": [
+    "{commander}",
+    "device",
+    "reset",
+    "--ip",
+    "{ip}",
+    "--device",
+    "{chip_type}"
+  ],
+  "serialNoAwareProbeExample": [
+    "{commander}",
+    "adapter",
+    "probe",
+    "--serialno",
+    "{serialno}"
+  ],
+  "serialNoAwareFlashExample": [
+    "{commander}",
+    "flash",
+    "{binary}",
+    "--serialno",
+    "{serialno}",
+    "--device",
+    "{chip_type}"
+  ],
+  "notes": [
+    "After substituting placeholders, remove any flag whose next argument is empty.",
+    "Boards may use --ip, --serialno, or both depending on connection.",
+    "useDeviceArgument=false means chip_type should be forced empty so --device is stripped."
+  ]
+}

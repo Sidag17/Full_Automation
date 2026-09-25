@@ -1,0 +1,112 @@
+[
+  {
+    "name": "brd2601b",
+    "ip": "192.168.1.101",
+    "serialno": "",
+    "chipType": "",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd2605a",
+    "ip": "192.168.1.102",
+    "serialno": "",
+    "chipType": "",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd2605b",
+    "ip": "192.168.1.103",
+    "serialno": "440381562",
+    "chipType": "SIWG917M111MGTBA",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd2608a",
+    "ip": "192.168.1.104",
+    "serialno": "",
+    "chipType": "",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd2608b",
+    "ip": "192.168.1.105",
+    "serialno": "",
+    "chipType": "",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd4186c",
+    "ip": "10.208.71.65",
+    "serialno": "",
+    "chipType": "EFR32MG24B210F1536IM48",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd4187c",
+    "ip": "10.208.71.66",
+    "serialno": "",
+    "chipType": "EFR32MG24B220F1536IM48",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd2705a",
+    "ip": "10.208.71.61",
+    "serialno": "",
+    "chipType": "EFR32ZG28B312F1024IM48",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": true
+  },
+  {
+    "name": "brd4338a",
+    "ip": "192.168.1.108",
+    "serialno": "",
+    "chipType": "",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd4342a",
+    "ip": "10.208.71.64",
+    "serialno": "",
+    "chipType": "SIWG917M111MGTBA",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  },
+  {
+    "name": "brd4343a",
+    "ip": "192.168.1.111",
+    "serialno": "",
+    "chipType": "",
+    "vcomPort": "",
+    "vcomMode": "",
+    "baudRate": 115200,
+    "enabled": false
+  }
+]

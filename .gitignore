@@ -1,0 +1,41 @@
+# Secrets
+.env
+.env.*
+!.env.example
+backend/.env
+**/.env
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Logs & runtime outputs (if ever under the repo)
+logs/
+reports/
+downloads/
+*.log
+npm-debug.log*
+
+# Build / coverage
+dist/
+build/
+coverage/
+.nyc_output/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.code-workspace
+
+# Cursor / local agent
+.cursor/
+.codex/
+agent-transcripts/
+
+# Optional local dumps
+*.zip
+tmp/
+temp/
